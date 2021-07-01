@@ -18,22 +18,22 @@ int isUnique(char * input)
 	// loop), 'result' is set to 0 and return.
 	int i, j, result = 1;
 	for (i = 0 ; i < length ; i++) {
-    	for (j = 0 ; j < i ; j++) {
-        	if (input[i] == input[j]) {
-            	result = 0;
-            	break;
-        	}
-    	}
+		for (j = 0 ; j < i ; j++) {
+			if (input[i] == input[j]) {
+				result = 0;
+            			break;
+        		}
+    		}
 	}
 	return result;
 }
 
 int main()
 {
-    // Assume that the string has less than 10 characters
+	// Assume that the string has less than 10 characters
 	char input[10] = {};
 	printf("Enter the string: ");
-    scanf("%s", input);
+	scanf("%s", input);
 
 	int length = strlen(input);
 	int result = isUnique(input);
